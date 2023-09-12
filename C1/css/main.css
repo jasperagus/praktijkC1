@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2add5d;
+}
+
+header {
+    padding: 20px;
+    background-color: #9535f9;
+}
+
+img {
+    max-width: 25%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the header */
+.kopjes {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the teacher list */
+.teacher-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style each teacher item */
+/* Style the teacher item */
+.teacher-item {
+    display: flex; /* Use flexbox to position image and text side by side */
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the container */
+    max-width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure proper positioning for child elements */
+    overflow: hidden; /* Hide any overflow from child elements */
+}
+
+/* Style teacher images */
+.teacher-item img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+/* Style teacher names */
+.teacher-item h2 {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+/* Style subject information */
+.teacher-item p {
+    display: flex;
+    font-size: 0.9rem;
+    color: #fff;
+    overflow: auto;
+}
+
+/* Style the hover text block */
+.hover-img-block {
+    position: absolute;
+    bottom: 0; /* Position the text block at the bottom */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Background for the text block */
+    color: #fff; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+    transform: translateY(100%); /* Initially push the text block below the container */
+    transition: transform 0.3s ease; /* Smooth transition for the text block */
+    width: 100%; /* Make the text block cover the entire parent */
+    opacity: 0; /* Initially, hide the text block */
+}
+
+/* Style the hover effect for the image */
+.img-block {
+    transition: transform 0.3s ease; /* Smooth transition for the image */
+}
+
+/* Apply the hover effect */
+.teacher-item:hover .img-block {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.teacher-item:hover .hover-img-block {
+    transform: translateY(0); /* Bring the text block up on hover */
+    opacity: 1; /* Show the text block on hover */
+}
+
+.hover-img-block {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Background for the text block */
+    color: #fff; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+    transform: translateY(100%); /* Initially push the text block below the image */
+    transition: transform 0.3s ease; /* Smooth transition for the text block */
+    width: 100%; /* Make the text block cover the entire parent */
+    opacity: 0; /* Initially, hide the text block */
+}
+
+.img-block {
+    transition: transform 0.3s ease; /* Smooth transition for the image */
+}
+
+.teacher-item:hover .img-block {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.teacher-item:hover .hover-img-block {
+    transform: translateY(0); /* Bring the text block up on hover */
+    opacity: 1; /* Show the text block on hover */
+}
+.fotos {
+    max-width: 100%;
+}
+.rooster-uitleg {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.4rem;
+}
+footer {
+    padding: 20px;
+    background-color: #9535f9;
+    display: flex;
+    justify-content: center;
+}
